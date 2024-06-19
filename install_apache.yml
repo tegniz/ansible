@@ -1,19 +1,44 @@
 ---
 
-- hosts: um 
+- hosts: all 
   become: true
   tasks:
 
   - name: update repostory index
     apt:
       update_cache: yes  
-
+        #when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution in ["Debian", "Ubuntu"]
   - name: install apache2 package
     apt:
       name: apache2
-      state: latest 
+      state: latest
+        #when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution in ["Debian", "Ubuntu"]
 
   - name: add php support for apache
     apt:
       name: libapache2-mod-php
       state: latest
+        #        when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution in ["Debian", "Ubuntu"]
+
+  - name: update repostory index
+    dnf:
+      update_cache: yes  
+        #when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution in ["CentOS", "RockyLinux", "AlmaLinux"]
+  - name: install apache2 package
+    dnf:
+      name: httpd
+      state: latest
+        #when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution in ["CentOS", "RockyLinux", "AlmaLinux"]
+
+  - name: add php support for apache
+    dnf:
+      name: php
+      state: latest
+        #        when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution in ["CentOS", "RockyLinux","AlmaLinux"]
+
