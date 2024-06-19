@@ -1,0 +1,399 @@
+    1  ifconfig
+    2  ls
+    3  ifconfig
+    4  curl www.baidu.com
+    5  dnf update -y
+    6  dnf update
+    7  ifconfig\
+    8  dnf update
+    9  ssh -X 192.168.1.1
+   10  dnf update -y
+   11  dnf install docker
+   12  systemctl start docker
+   13  docker pull tegniz/my_wordpress
+   14  docker pull tegniz/my_mysql
+   15  docker images
+   16  docker run -d --name my_mysql --restart always -e MYSQL_ROOT_PASSWORD=Deerfield2008 -e MYSQL_DATABASE=db_web -p 3710:3306 tegniz/my_mysql
+   17  docker ps
+   18  docker run -d --name my_wordpress --restart always --link my_mysql  -e WORDPRESS_DB_HOST=192.168.1.63:3710 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=Deerfield2008 -e WORDPRESS_DB_NAME=db_web -p  80:80  -p 443:443 tegniz/my_wordpress
+   19  docker ps
+   20  ifconfig
+   21  dig ms53152762.msv1.invalid
+   22  dig www.shwomarts.com
+   23  dig www.showmarts.com
+   24  dig www.showmarts.ca
+   25  dig www.showmart.ca
+   26  curl -D- -o /dev/null www.showmart.ca
+   27  curl -D- -o /dev/null https://www.showmart.ca
+   28  curl -D- -o /dev/null https://www.tidecloud.ca
+   29  docker ps
+   30  ifconfig
+   31  docker ps
+   32  dig www.hudl.com
+   33  dig vg.hudl.com
+   34  docker ps
+   35  docker cp 2ff44152f1ea:/var/www/html/wp-config.php .
+   36  docker cp 2ff44152f1ea:/var/www/html/.haccess .
+   37  docker cp 2ff44152f1ea:/var/www/html/.htaccess .
+   38  vi wp-config.php 
+   39  docker cp wp-config.php 2ff44152f1ea:/var/www/html/
+   40  vi wp-config.php 
+   41  docker cp wp-config.php 2ff44152f1ea:/var/www/html/
+   42  vi .htaccess 
+   43  docker cp .htaccess 2ff44152f1ea:/var/www/html/
+   44  vi wp-config.php 
+   45  docker exe -it 2ff44152f1ea /bin/bash
+   46  docker exec -it 2ff44152f1ea /bin/bash
+   47  curl -D- -o /dev/null https://www.sonosite.com/
+   48  https://www.sonosite.com/products/ultrasound-machines-and-accessories
+   49  curl -D- -o /dev/null https://www.sonosite.com/products/ultrasound-machines-and-accessories
+   50  su - tyler
+   51  docker ps
+   52  ~ls
+   53  ls
+   54  hello
+   55  ls
+   56  ls
+   57  docker ps
+   58  netstat -tlunp
+   59  mkdir script
+   60  cd script
+   61  vi netstat.sh
+   62  sed -i 's/#//g' netstat.sh 
+   63  cat netstat.sh 
+   64  sh netstat.sh
+   65  cat /etc/shadow
+   66  grep tyler /etc/shadow
+   67  head -n r /etc/group
+   68  head -n 4 /etc/group
+   69  cat /etc/group
+   70  grep tyler /etc/passwd /etc/group /etc/gshadow
+   71  ifconfig
+   72  chage tyler
+   73  chage -l tyler
+   74  dnf install finger
+   75  finger tyler
+   76  finger -s tyler
+   77  finger
+   78  echo "I will study" > ~tyler/.plan
+   79  finger tyler
+   80  dmesg | grep -i acl
+   81  cd ~
+   82  ls
+   83  touch acl_test1
+   84  ll acl_test1 
+   85  setfacl -m u:tyler:rx acl_test1 
+   86  ll acl_test1 
+   87  getfacl acl_test1 
+   88  setfacl -m u::rwx acl_test1 
+   89  ll acl_test1 
+   90  getfacl acl_test1 
+   91  setfacl -m g:mygroup1:rx acl_test1 
+   92  setfacl -m g:wheel:rx acl_test1 
+   93  getfacl acl_test1 
+   94  setfacl -m m:r acl_test1 
+   95  getfacl acl_test1 
+   96  cd /tmp
+   97  mkdir project
+   98  ls -ld project/
+   99  chmod 700 project/
+  100  ls -ld project/
+  101  su tyler
+  102  setfacl -m u:tyler:rx project/
+  103  getfacl project/
+  104  su tyler
+  105  cd project/
+  106  ls
+  107  touch ll
+  108  ls
+  109  ls -l
+  110  cd ..
+  111  setfacl -m d:u:tyler:rx project/
+  112  getfacl project/
+  113  mkdir project/dir1
+  114  getfacl project/dir1
+  115  touch project/dir1/lls
+  116  cd project/dir1/
+  117  ls
+  118  getfacl lls 
+  119  vi /etc/sudoers
+  120  visudo
+  121  cat /etc/login.defs
+  122  cat /etc/pam.d/login 
+  123  cat /etc/pam.d/system-auth 
+  124  cat /lib64/security/pam_unix.so 
+  125  od /lib64/security/pam_unix.so
+  126  cat /etc/security/access.conf 
+  127  cat /etc/security
+  128  last
+  129  cat /etc/security/limits.conf 
+  130  vi /etc/security/limits.conf
+  131  ulimit -a
+  132  su - tyler
+  133  who
+  134  echo $?
+  135  echo $TTY
+  136  echo $)
+  137  echo $0
+  138  echo $?
+  139  who
+  140  write tyler "web console"
+  141  wall " I will shota;ldjlajdsf"
+  142  mail -s "nice to meet you " tyler
+  143  dnf install mail
+  144  dnf install s-nail
+  145  mail
+  146  dnf install squid
+  147  ifconfig
+  148  ping f36s-cx61
+  149  ping f36s
+  150  htpasswd
+  151  history | grep nmap
+  152  dig cnas.showmart.ca
+  153  dnf update -y
+  154  curl -D- -o /dev/null https://cnas.showmart.ca
+  155  ping rdo
+  156  ssh -X home.showmart.ca -p 65522
+  157  exit
+  158  ls .ssh/
+  159  cat .ssh/id_rsa.pub
+  160  ls .ssh/
+  161  cat .ssh/known_hosts
+  162  ls .ssh/
+  163  cat .ssh/id_rsa
+  164  exit
+  165  dnf install ansible -y
+  166  rpm -ql ansible
+  167  ssh-keygen -t rsa -P ''
+  168  ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.1.19
+  169  ifconfig
+  170  ssh-copy-id -i ~/.ssh/id_rsa.pub tyler@192.168.1.19
+  171  ssh -X 192.168.1.19
+  172  vi /etc/ansible/hosts 
+  173  ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.186.1.3
+  174  ssh -X 192.168.1.3
+  175  ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.186.1.3
+  176  scp /root/.ssh/id_rsa.pub root@192.168.1.3/root/.ssh/id_rsa.pub
+  177  scp /root/.ssh/id_rsa.pub root@192.168.1.3/root/.ssh/
+  178  ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.186.1.3
+  179  ssh 192.168.1.3
+  180  ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.186.1.3
+  181  vi /etc/ansible/hosts 
+  182  ansible alma9 -m command -a "date"
+  183  ansible-doc -l
+  184  ansible-doc -s yum
+  185  ssh -X 192.168.1.3
+  186  vi /etc/ansible/hosts 
+  187  ansible cx61 -m command -a "date"
+  188  ansible storm_cluster -m command -a 'uptime'
+  189  ansible  -m command -a 'uptime'
+  190  ansible  cx61 -m command -a 'uptime'
+  191  ansible  alma9 -m command -a 'uptime'
+  192  ansible cx61 -m setup
+  193  ansible cx61 -m ping
+  194  ansible cx61 -m file -a "src=/etc/resolv.conf dest=/tmp/resolv.conf state=link"
+  195  ansible cx61 -m command -a "ls -al /tmp/reso*"
+  196  ansible cx61 -m command -a "ls -al /tmp/resolv.conf"
+  197  ansible cx61 -m command -a "ls -al /tmp/reso\*"
+  198  ansible cx61 -m command -a "ls -al /tmp/reso\\*"
+  199  ansible cx61 -m command -a "ls -al /tmp/"
+  200  ansible cx61 -m command -a "ls -al /tmp/reso.*"
+  201  ansible cx61 -m file -a "path=/tmp/resolv.conf state=absent"
+  202  ansible cx61 -m command -a "ls -al /tmp/resolv.conf"
+  203  ansible alma9 -m copy -a "src=/etc/ansible/ansible.cfg dest=/tmp/ansible.cfg owner=root group=root mode=0644"
+  204  ansible alma9 -m command -a "ls -al /tmp/ansible.cfg"
+  205  cd /tmp
+  206  vi test.sh
+  207  chmod +x test.sh 
+  208  ls -l test.sh 
+  209  ansible
+  210  ansible storm_cluster -m ping
+  211  ansible all -m ping
+  212  ansible all -m copy -a "src=test.sh dest=/tmp/test.sh owner=root groupt=root mode=0755"
+  213  ansible all -m copy -a "src=/tmp/test.sh dest=/tmp/test.sh owner=root groupt=root mode=0755"
+  214  ansible cx61 -m shell -a "/tmp/test.sh"
+  215  ansible all -m shell -a "/tmp/test.sh"
+  216  ls
+  217  ansible all -m copy -a "src=/tmp/test.sh dest=/tmp/test.sh owner=root groupt=root mode=0755"
+  218  ansible all -m copy -a "src=/tmp/test.sh dest=/tmp/test.sh owner=root group=root mode=0755"
+  219  ansible all -m shell -a "/tmp/test.sh"
+  220  ansible all --list-hosts
+  221  ansible -i ./hosts --connection=local local -m ping
+  222  ansible all -m ping
+  223  ansible all -m command "ls -la /tmp"
+  224  ansible all -m command -a "ls -la /tmp"
+  225  ansible all -m shell -a "/tmp/test.sh"
+  226  ansible cx61 -m shell -a "dnf update -y"
+  227  ansible cx61 remote -b --become-user=root -m shell -a 'dnf install nginx'
+  228  ansible cx61 -b --become-user=root -m shell -a 'dnf install nginx'
+  229  vi nginx.yml
+  230  ansible-playbook nginx.yml 
+  231  vi nginx.yml
+  232  ansible-playbook nginx.yml 
+  233  vi nginx.yml
+  234  ansible-playbook nginx.yml 
+  235  vi nginx.yml
+  236  ansible-playbook nginx.yml 
+  237  vi nginx.yml
+  238  ansible-playbook nginx.yml 
+  239  vi nginx.yml
+  240  ansible-playbook nginx.yml 
+  241  vi nginx.yml
+  242  ansible-playbook nginx.yml 
+  243  ansible all -m commmand "date"
+  244  ansible all -m commmand -a "date"
+  245  ansible all -m commmand  "date"
+  246  ansible all -m commmand  "ls -al"
+  247  su - tyler
+  248  ls
+  249  PS1='┌──(\u@\h)-[\w]\n└─\$'
+  250  ls
+  251  which git
+  252  dnf install git
+  253  git
+  254  cd .ssh
+  255  ls
+  256  cat id_rsa.pub 
+  257  git clone git@github.com:tegniz/ansible.git
+  258  ls
+  259  cd ansible/
+  260  ls
+  261  cat README.md 
+  262  git config --global user.name "Tyler"
+  263  git config --global user.email "t@tidecloud.cn"
+  264  cat ~/.gitconfig 
+  265  vi README.md 
+  266  cat README.md 
+  267  git status
+  268  git diff README.md
+  269  git add README.md 
+  270  git status
+  271  git commit -m "updated readme file, initial commit"
+  272  git push origin master
+  273  git pull origin master
+  274  git push main master
+  275  git push ansible master
+  276  git push teginz master
+  277  git push tegniz master
+  278* git pull --rebase
+  279  git pull --rebase ansible master
+  280  git push ansible main
+  281  git pull ansible main
+  282  git pull --rebase ansible main
+  283  git pull --rebase tegniz main
+  284  ls
+  285  cd ..
+  286  git pull --rebase tegniz main
+  287  git pull ansible main
+  288  git pull --rebase tegniz main
+  289  git push ansible main
+  290  ls
+  291  mv ansible/ ~
+  292  cd ~
+  293  ls
+  294  git push ansible main
+  295  git push origin master
+  296  git status
+  297  git clone git@github.com:tegniz/ansible.git
+  298  su - tyler
+  299  ls
+  300  git rebase --continue
+  301  ls
+  302  git init
+  303  git push origin master
+  304  git push ansible master
+  305  git pull ansible master
+  306  git config --global init.defaultBranch master
+  307  git push ansible master
+  308  git push tegniz master
+  309  git pull ansible master
+  310  git commit -m "update readme file"
+  311  git add ansible/README.md 
+  312  git commit -m "update readme file"
+  313  git add
+  314  git add ansible/README.md 
+  315  git commit -m "update readme file"
+  316  git commit ansible/README.md -m "update readme file"
+  317  cat ~/.gitconfig 
+  318  cd ansible/
+  319  ls
+  320  cat README.md 
+  321  git status
+  322  vi README.md 
+  323  git status
+  324  git diff
+  325  git add README.md 
+  326  git status
+  327  git commit -m "update Read me file" 
+  328  git push origin master
+  329  git push ansible master
+  330  git push ansible.git master
+  331  git push ansible main
+  332  su - tyler
+  333  ls
+  334  vi /etc/ansible/hosts 
+  335  git push origin main
+  336  pwd
+  337  vi inventory
+  338  ls
+  339  cp /etc/ansible/hosts inventory
+  340  ls
+  341  cat inventory 
+  342  :q
+  343  git status
+  344  git add inventory 
+  345  git push origin main
+  346  git add inventory -m "new inventory config, added two servers"
+  347  git commit -m "new inventory config, added two servers"
+  348  git push origin main
+  349  ansible all --key-file ~/.ssh/id_rsa.pub -i inventory -m ping
+  350  ansible all  -i inventory -m ping
+  351  ping 192.168.50.139
+  352  PS1=┌──(\u@\h)-[\w]\n└──\$
+  353  PS1='┌──(\u@\h)-[\w]\n└──\$'
+  354  vi ansible.cfg
+  355  cat /etc/ansible/ansible.cfg 
+  356  ansible all --list-hosts
+  357  ansible all -m gather_facts
+  358  ansible all -m gather_facts --limit alma9
+  359  git status
+  360  git add ansible.cfg 
+  361  git status
+  362  git commit -m "first version of ansible.cfg"
+  363  git push origin main
+  364  git status
+  365  ls
+  366  vi ansible.cfg 
+  367  ansible all -m gather_facts --limit alma9
+  368  git status
+  369  ls
+  370  vi inventory 
+  371  ssh-copy-id -i ../.ssh/id_rsa.pub u-m
+  372  ssh-copy-id -i ../.ssh/id_rsa.pub 192.168.1.73
+  373  ansible um -m apt -a update_cache=true
+  374  ssh -X 192.168.173
+  375  ssh -X 192.168.1.73
+  376  ansible um -m apt -a update_cache=true
+  377* ansible all -m apt -a update_
+  378  ansible um -m apt -a update_cache=true --become --ask-become-pass
+  379  ansible um -m apt -a 'install ansible'
+  380  ansible um -m apt -a name=ansible
+  381  ansible um -m apt -a "name=snapd state=latest" 
+  382  ansible um -m apt -a "name=snapd state=latest"  --become --ask-become-pass
+  383  vim install _apache.yml
+  384  ls
+  385  cat install 
+  386  mv install install_apache.yml
+  387  ansible-playbook --ask-become-pass install_apache.yml 
+  388  vi install_apache.yml 
+  389  ansible-playbook --ask-become-pass install_apache.yml 
+  390  vi install_apache.yml 
+  391  ansible-playbook --ask-become-pass install_apache.yml 
+  392  vi install_apache.yml 
+  393  ansible-playbook --ask-become-pass install_apache.yml 
+  394  vi install_apache.yml 
+  395  ansible-playbook --ask-become-pass install_apache.yml 
+  396  cp install_apache.yml remove_apache.yml
+  397  vi remove_apache.yml 
+  398  ansible-playbook --ask-become-pass remove_apache.yml 
+  399  history > history.txt
